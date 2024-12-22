@@ -16,21 +16,28 @@
         <label for="heightinputfeet">
             Your height
         </label>
-        <input required class="inputfieldsize" id="heightinputfeet" type="number" min="0" max="10" placeholder="Feet">
-        <input required class="inputfieldsize" id="heightinputinch" type="number" min="0" max="11" placeholder="inch">
+        <input required step="1" class="inputfieldsize" id="heightinputfeet" type="number" min="0" max="10" placeholder="Feet">
+        <input required step="1" class="inputfieldsize" id="heightinputinch" type="number" min="0" max="11" placeholder="inch">
 
         <br>
 
-        <label for="weightinput">
+        <label for="weightinputkg">
             Your Weight
         </label>
-        <input required class="inputfieldsize2" id="weightinput" type="number" min="0" max="10" placeholder="85 KG">
+        <input required step="0.1" class="inputfieldsize2" id="weightinputkg" type="number" min="0" max="200" placeholder="85 KG">
 
 
 
         <button type="submit">Calculate</button>
 
     </form>
+
+<div id="result">
+    <h2 id="title"></h2>
+    <p id="suggestion"></p>
+</div>
+
+
 
 
     <script src="script.mjs">
